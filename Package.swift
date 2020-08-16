@@ -13,13 +13,13 @@ let package = Package(
     ],
     dependencies: [
         // HTTP client library built on SwiftNIO
-        .package(url: "https://github.com/swift-server/async-http-client.git", from: "1.2.0"),
+        .package(url: "https://github.com/val-verde/async-http-client.git", .branch("dutch-master")),
     
         // Sugary extensions for the SwiftNIO library
-        .package(url: "https://github.com/vapor/async-kit.git", from: "1.0.0"),
+        .package(url: "https://github.com/val-verde/async-kit.git", .branch("dutch-master")),
 
         // 💻 APIs for creating interactive CLI tools.
-        .package(url: "https://github.com/vapor/console-kit.git", from: "4.0.0"),
+        .package(url: "https://github.com/val-verde/console-kit.git", .branch("dutch-master")),
 
         // 🔑 Hashing (BCrypt, SHA2, HMAC), encryption (AES), public-key (RSA), and random data generation.
         .package(url: "https://github.com/apple/swift-crypto.git", from: "1.0.0"),
@@ -31,7 +31,7 @@ let package = Package(
         .package(url: "https://github.com/swift-server/swift-backtrace.git", from: "1.1.1"),
         
         // Event-driven network application framework for high performance protocol servers & clients, non-blocking.
-        .package(url: "https://github.com/apple/swift-nio.git", from: "2.18.0"),
+        .package(url: "https://github.com/val-verde/swift-nio.git", .branch("dutch-master")),
         
         // Bindings to OpenSSL-compatible libraries for TLS support in SwiftNIO
         .package(url: "https://github.com/apple/swift-nio-ssl.git", from: "2.8.0"),
