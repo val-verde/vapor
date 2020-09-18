@@ -1,4 +1,4 @@
-#if os(Linux)
+#if os(Android) || os(Linux)
 import Glibc
 #else
 import Darwin
