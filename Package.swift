@@ -15,13 +15,13 @@ let package = Package(
     ],
     dependencies: [
         // HTTP client library built on SwiftNIO
-        .package(url: "https://github.com/val-verde/async-http-client.git", .branch("val-verde-mainline")),
+        .package(url: "https://github.com/val-verde/async-http-client.git", .branch("val-verde-android-mainline")),
     
         // Sugary extensions for the SwiftNIO library
-        .package(url: "https://github.com/val-verde/async-kit.git", .branch("val-verde-mainline")),
+        .package(url: "https://github.com/val-verde/async-kit.git", .branch("val-verde-android-mainline")),
 
         // 💻 APIs for creating interactive CLI tools.
-        .package(url: "https://github.com/val-verde/console-kit.git", .branch("val-verde-mainline")),
+        .package(url: "https://github.com/val-verde/console-kit.git", .branch("val-verde-android-mainline")),
 
         // 🔑 Hashing (BCrypt, SHA2, HMAC), encryption (AES), public-key (RSA), and random data generation.
         .package(url: "https://github.com/val-verde/swift-crypto.git", .branch("val-verde-mainline")),
@@ -33,25 +33,25 @@ let package = Package(
         .package(url: "https://github.com/val-verde/swift-backtrace.git", .branch("val-verde-mainline")),
         
         // Event-driven network application framework for high performance protocol servers & clients, non-blocking.
-        .package(url: "https://github.com/val-verde/swift-nio.git", .branch("val-verde-mainline")),
+        .package(url: "https://github.com/val-verde/swift-nio.git", .branch("val-verde-android-mainline")),
         
         // Bindings to OpenSSL-compatible libraries for TLS support in SwiftNIO
-        .package(url: "https://github.com/val-verde/swift-nio-ssl.git", .branch("val-verde-mainline")),
+        .package(url: "https://github.com/val-verde/swift-nio-ssl.git", .branch("val-verde-android-mainline")),
         
         // HTTP/2 support for SwiftNIO
-        .package(url: "https://github.com/val-verde/swift-nio-http2.git", .branch("val-verde-mainline")),
+        .package(url: "https://github.com/val-verde/swift-nio-http2.git", .branch("val-verde-android-mainline")),
         
         // Useful code around SwiftNIO.
-        .package(url: "https://github.com/val-verde/swift-nio-extras.git", .branch("val-verde-mainline")),
+        .package(url: "https://github.com/val-verde/swift-nio-extras.git", .branch("val-verde-android-mainline")),
         
         // Swift logging API
-        .package(url: "https://github.com/val-verde/swift-log.git", .branch("val-verde-mainline")),
+        .package(url: "https://github.com/val-verde/swift-log.git", .branch("val-verde-android-mainline")),
 
         // Swift metrics API
         .package(url: "https://github.com/val-verde/swift-metrics.git", .branch("val-verde-mainline")),
 
         // WebSocket client library built on SwiftNIO
-        .package(url: "https://github.com/val-verde/websocket-kit.git", .branch("val-verde-mainline")),
+        .package(url: "https://github.com/val-verde/websocket-kit.git", .branch("val-verde-android-mainline")),
         
         // MultipartKit, Multipart encoding and decoding
         .package(url: "https://github.com/vapor/multipart-kit.git", from: "4.2.1"),
