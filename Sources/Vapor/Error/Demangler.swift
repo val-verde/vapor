@@ -24,7 +24,7 @@ func _stdlib_demangleName(_ mangledName: String) -> String {
 
         if let demangledNamePtr = demangledNamePtr {
             let demangledName = String(cString: demangledNamePtr)
-            free(demangledNamePtr)
+            demangledNamePtr.deallocate()
             return demangledName
         }
         return mangledName
