@@ -1,4 +1,4 @@
-#if os(Android) || os(Linux)
+#if os(Android) || os(Linux) || os(Musl)
 import Glibc
 #else
 import Darwin.C
