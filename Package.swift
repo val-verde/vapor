@@ -83,10 +83,12 @@ let package = Package(
             .product(name: "NIOHTTP2", package: "swift-nio-http2"),
             .product(name: "NIOSSL", package: "swift-nio-ssl"),
             .product(name: "NIOWebSocket", package: "swift-nio"),
-            .product(name: "Crypto", package: "swift-crypto"),
             .product(name: "RoutingKit", package: "routing-kit"),
             .product(name: "WebSocketKit", package: "websocket-kit"),
             .product(name: "MultipartKit", package: "multipart-kit"),
+        ],
+        linkerSettings: [
+            .linkedLibrary("Crypto"),
         ]),
 	
         // Development
