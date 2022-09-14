@@ -227,7 +227,9 @@ extension HTTPHeaders {
 private extension Substring {
     /// Converts all `\"` to `"`.
     func unescapingDoubleQuotes() -> Substring {
-        self.lazy.split(separator: "\\").reduce(into: "") { (result, part) in
+        let splits = self.lazy.split(separator: "\\")
+
+        return splits.reduce(into: "") { (result, part) in
             if result.isEmpty || part.first == "\"" {
                 result += part
             } else {
